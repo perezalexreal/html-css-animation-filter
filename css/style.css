@@ -152,3 +152,114 @@
     }
 }
 
+.ex-11-icon:hover {
+    animation: toTurnBack 2s linear;
+}
+
+
+@keyframes toTurnBack {
+    0%{
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(320deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: turnTop 3s;
+}
+
+@keyframes turnTop {
+
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: 60%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: turnbottom 3s linear;
+}
+
+@keyframes turnbottom {
+
+    0% {
+        right: 10%;
+    }
+    50% {
+        right: 60%;
+    }
+    100% {
+        right: 20%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: turnComplete 3s linear;
+}
+
+@keyframes turnComplete {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+    25% {
+        top: -10px;
+        left: calc(100% - 30px);
+    }
+    50% {
+        top: 100%;
+        left: calc(100% - 10px);
+    }
+    75% {
+        top: 100%;
+        left: 0;
+    }
+    90%{
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        top: -10px;
+        left: 10%;
+        }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: turnCompleteBottom 3s linear;
+}
+
+@keyframes turnCompleteBottom {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    25% {
+        bottom: -10px;
+        right: calc(100% - 30px);
+    }
+    50% {
+        bottom: 100%;
+        right: calc(100% - 10px);
+    }
+    75% {
+        bottom: 100%;
+        right: 0;
+    }
+    90%{
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+        }
+}
+/**/
